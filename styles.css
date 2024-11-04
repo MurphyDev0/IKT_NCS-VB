@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color: white;
+    background-color: #242424;
+    margin: 0;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 15px;
+}
+
+header ul li{
+    margin-left: 25px;
+    padding: 10px;
+}
+
+header ul a:hover{
+    color: #0088c7;
+    transition: 0.5s ease-in-out;
+}
+
+header ul a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
