@@ -34,3 +34,51 @@ header ul a{
     text-decoration: none;
     font-size: 1.5em;
 }
+
+table, td, tr{
+    border: 1px solid red;
+}
+
+table{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 80%;
+    text-align: center;
+}
+
+td{
+    width: 33.33%;
+}
+
+td h3{
+    margin-top: 10px;
+}
+
+.img-box img{
+    margin-top: 10px;
+    width: 95%;
+    border-radius: 10px;
+}
+
+.img-box{
+    margin: 0 auto;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #c6c6c6;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px 0px #707070;
+}
+
+.little-img-box img{
+    width: 31%;
+}
+
+.specs{
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: left;
+    width: 80%;
+    border: 1px solid red;
+}
