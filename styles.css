@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f0f0f0;
+}
+
 
 header{
     color: white;
@@ -33,10 +37,6 @@ header ul a{
     color: white;
     text-decoration: none;
     font-size: 1.5em;
-}
-
-table, td, tr{
-    border: 1px solid red;
 }
 
 table{
@@ -80,5 +80,4 @@ td h3{
     margin-top: 15px;
     text-align: left;
     width: 80%;
-    border: 1px solid red;
 }
