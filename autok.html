@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!--<header>
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
@@ -82,6 +82,96 @@
                 </td>
             </tr>
         </table>
+    </main>-->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="autok.html">Autók</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+                <li><a href="rolunk.html">Rólunk</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <tr>
+                <td colspan="3"><h1>Eladó autóink</h1></td>
+            </tr>
+            <tr>
+                <td>
+                    <h3>Opel Astra G</h3>
+                    <div class="img-box">
+                        <img class="thumbnail" src="images/gastra1.jpg" alt="Opel Astra G" onclick="openModal('gastra')">
+                        <div class="little-img-box">
+                            <img src="images/gastra2.jpg" alt="Opel Astra G" onclick="openModal('gastra')">
+                            <img src="images/gastra3.jpg" alt="Opel Astra G" onclick="openModal('gastra')">
+                            <img src="images/gastra4.jpg" alt="Opel Astra G" onclick="openModal('gastra')">
+                        </div>
+                    </div>
+                    <div class="specs">
+                        <p>Évjárat: 2004</p>
+                        <p>Km: 318 000</p>
+                        <p>Üzemanyag: Benzin</p>
+                        <p>Hengerűrtartalom: 1 598 cm<sup>3</sup></p>
+                        <p>Teljesítmény: 74 kW, 101 LE</p>
+                        <p><b>Ár: 419 000 Ft</b></p>
+                    </div>
+                </td>
+                <td>
+                    <h3>Ford Focus Mk1</h3>
+                    <div class="img-box">
+                        <img class="thumbnail" src="images/focus1.jpg" alt="Ford Focus Mk1" onclick="openModal('focus')">
+                        <div class="little-img-box">
+                            <img src="images/focus2.jpg" alt="Ford Focus Mk1" onclick="openModal('focus')">
+                            <img src="images/focus3.jpg" alt="Ford Focus Mk1" onclick="openModal('focus')">
+                            <img src="images/focus4.jpg" alt="Ford Focus Mk1" onclick="openModal('focus')">
+                        </div>
+                    </div>
+                    <div class="specs">
+                        <p>Évjárat: 2003</p>
+                        <p>Km: 190 700</p>
+                        <p>Üzemanyag: Benzin</p>
+                        <p>Hengerűrtartalom: 1 388 cm<sup>3</sup></p>
+                        <p>Teljesítmény: 55 kW, 74 LE</p>
+                        <p><b>Ár: 700 000 Ft</b></p>
+                    </div>
+                </td>
+                <td>
+                    <h3>Ford Focus C-Max</h3>
+                    <div class="img-box">
+                        <img class="thumbnail" src="images/cmax1.jpg" alt="Ford Focus C-Max" onclick="openModal('cmax')">
+                        <div class="little-img-box">
+                            <img src="images/cmax2.jpg" alt="Ford Focus C-Max" onclick="openModal('cmax')">
+                            <img src="images/cmax3.jpg" alt="Ford Focus C-Max" onclick="openModal('cmax')">
+                            <img src="images/cmax4.jpg" alt="Ford Focus C-Max" onclick="openModal('cmax')">
+                        </div>
+                    </div>
+                    <div class="specs">
+                        <p>Évjárat: 2006</p>
+                        <p>Km: 230 000</p>
+                        <p>Üzemanyag: Benzin</p>
+                        <p>Hengerűrtartalom: 1 596 cm<sup>3</sup></p>
+                        <p>Teljesítmény: 74 kW, 101 LE</p>
+                        <p><b>Ár: 1 200 000 Ft</b></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </main>
+
+    <!-- Modal for Image Slideshow -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="slideshow-container">
+                <button class="prev" onclick="changeSlide(-1)" type="button">&#10094;</button>
+                <img id="currentSlide" src="" alt="Car Image">
+                <button class="next" onclick="changeSlide(1)" type="button">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
