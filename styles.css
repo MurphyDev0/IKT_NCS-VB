@@ -201,9 +201,9 @@ td h3{
     border-radius: 5px;
     font-size: 18px;
 }
-#popup.success {
+.success {
     background-color: green;
 }
-#popup.error {
+.error {
     background-color: red;
 }
