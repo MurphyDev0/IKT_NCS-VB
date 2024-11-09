@@ -32,3 +32,24 @@ function updateSlide() {
     document.getElementById('currentSlide').src = currentCarImages[currentImageIndex];
     console.log(currentCarImages[currentImageIndex]);
 }
+
+function kuldes() {
+    const nev = document.getElementById('nev').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const uzenet = document.getElementById('uzenet').value.trim();
+    const popup = document.getElementById('popup');
+
+    if (nev.length !== 0 && email.length !== 0 && uzenet.length !== 0) {
+        popup.innerHTML = `&check; Sikeres küldés!`;
+        popup.className = 'success';
+    } else {
+        popup.innerHTML = `&times; Hiba! Minden mezőt ki kell tölteni!`;
+        popup.className = 'error';
+    }
+
+    popup.style.display = 'block';
+
+    setTimeout(() => {
+        popup.style.display = 'none';
+    }, 3000);
+}
