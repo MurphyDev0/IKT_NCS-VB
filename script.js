@@ -16,6 +16,7 @@ function openModal(car) {
 
 function closeModal() {
     document.getElementById('modal').style.display = 'none'
+    
 }
 
 function changeSlide(direction) {
@@ -34,10 +35,13 @@ function updateSlide() {
 }
 
 function kuldes() {
+    
     const nev = document.getElementById('nev').value.trim()
     const email = document.getElementById('email').value.trim()
     const uzenet = document.getElementById('uzenet').value.trim()
     const popup = document.getElementById('popup')
+
+    popup.classList.remove("error");
 
     if (nev.length !== 0 && email.length !== 0 && uzenet.length !== 0) {
         popup.innerHTML = `&check; Sikeres küldés!`
