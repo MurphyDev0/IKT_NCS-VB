@@ -249,3 +249,48 @@ main {
     font-weight: bold;
 }
 
+.fooldal {
+    font-size: 20px;
+    background-color: rgb(252, 252, 252);
+    padding: 15px 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(182, 182, 182);
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.fooldal h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.fooldal h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.fooldal p {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.fooldal img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 0 14px gray;
+    width: 70%;
+}
+
+.fooldal ul li {
+    margin: 15px;
+}
+
+.fooldal-div{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
