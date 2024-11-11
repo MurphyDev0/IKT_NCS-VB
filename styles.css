@@ -66,15 +66,26 @@ td h3{
     border-radius: 10px;
 }
 
+.small-img{
+    margin-bottom: 10px;
+}
+
 .img-box{
     margin: 0 auto;
     margin-top: 10px;
     justify-content: center;
     align-items: center;
-    background-color: #c6c6c6;
+    /*background-color: #c6c6c6;*/
+    background-color: #003366;
     width: 80%;
     border-radius: 10px;
-    box-shadow: 5px 5px 0px 0px #707070;
+    box-shadow: 0 0 20px #add6ff;
+}
+
+.img-box:hover {
+    width: 85%;
+    opacity: .7;
+    transition: .3s;
 }
 
 .little-img-box img{
@@ -103,7 +114,7 @@ td h3{
 .modal-content{
     margin: auto;
     background-color: #fefefe;
-    border: 1px solid #888;
+    /*border: 1px solid #888;*/
     width: 80%;
     max-width: 700px;
     text-align: center;
@@ -113,7 +124,9 @@ td h3{
 #currentSlide{
     width: 100%;
     display: block;
+    
 }
+
 
 .close{
     color: #aaa;
