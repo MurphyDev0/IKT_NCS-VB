@@ -1,0 +1,7 @@
+Projekt neve: Vadász Autókereskedés
+
+Csapatvezető: Vadász Bence
+
+Csapattagok: Andrási Marcell, Nagy Csongor, Vadász Bence
+
+Projekt rövid leírása: Egy képzeletbeli új és használtautó kereskedés weboldala
