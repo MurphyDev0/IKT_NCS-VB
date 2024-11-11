@@ -5,6 +5,14 @@ const carImages = {
     gastra: ['images/gastra1.jpg', 'images/gastra2.jpg', 'images/gastra3.jpg', 'images/gastra4.jpg', 'images/gastra5.jpg'],
     focus: ['images/focus1.jpg', 'images/focus2.jpg', 'images/focus3.jpg', 'images/focus4.jpg', 'images/focus5.jpg'],
     cmax: ['images/cmax1.jpg', 'images/cmax2.jpg', 'images/cmax3.jpg', 'images/cmax4.jpg', 'images/cmax5.jpg'],
+    a6avant: ['images/a61.jpg', 'images/a62.jpg', 'images/a63.jpg', 'images/a64.jpg', 'images/a65.jpg'],
+    f150: ['images/f1501.jpg', 'images/f1502.jpg', 'images/f1503.jpg'],
+    gle: ['images/gle1.jpg', 'images/gle2.jpg', 'images/gle3.jpg', 'images/gle4.jpg', 'images/gle5.jpg'],
+    cayman: ['images/cayman1.jpg', 'images/cayman2.jpg', 'images/cayman3.jpg', 'images/cayman4.jpg', 'images/cayman5.jpg'],
+    stinger: ['images/stinger1.jpg', 'images/stinger2.jpg', 'images/stinger3.jpg', 'images/stinger4.jpg', 'images/stinger5.jpg'],
+    caravelle: ['images/caravelle1.jpg', 'images/caravelle2.jpg', 'images/caravelle3.jpg', 'images/caravelle4.jpg', 'images/caravelle5.jpg'],
+    ram: ['images/ram1.jpg', 'images/ram2.jpg', 'images/ram3.jpg', 'images/ram4.jpg', 'images/ram5.jpg'],
+    a5: ['images/a51.jpg', 'images/a52.jpg', 'images/a53.jpg', 'images/a54.jpg', 'images/a55.jpg']
 }
 
 function openModal(car) {
