@@ -369,16 +369,6 @@ main {
     animation: progress 10s linear;
 }
 
-#progress-bubble {
-    position: absolute;
-    top: -35px;
-    left: 0;
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 12px;
-}
 
 #myDiv {
     display: none;
