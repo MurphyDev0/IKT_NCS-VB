@@ -65,3 +65,27 @@ function kuldes() {
         popup.style.display = 'none'
     }, 3000)
 }
+
+function loading(){
+    const loader = document.getElementById('loader')
+    loader.style.display = 'flex'
+
+    let files = 63;
+    let filesSec = 10000/files;
+    let loadedFiles = 0;
+
+    document.getElementById('allFiles').innerHTML = files;
+    setTimeout(() => {
+        for(let i = 0; i < files; i++){
+            setTimeout(() => {
+                loadedFiles++;
+                document.getElementById("loadedFiles").innerHTML = loadedFiles;
+            }, filesSec * i)
+        }
+        document.getElementById("loadedFiles").innerHTML = loadedFiles;
+    }, filesSec)
+
+    setTimeout(() => {
+        loader.style.display = 'none'
+    }, 10000)
+}

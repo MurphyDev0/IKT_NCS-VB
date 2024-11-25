@@ -6,10 +6,11 @@
     <title>Autókereskedés</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onload="loading()">
     <header>
         <nav>
             <ul>
+                <img id="logo" src="images/logo.png" alt="">
                 <li><a class="active" href="index.html">Főoldal</a></li>
                 <li><a href="autok.html">Autók</a></li>
                 <li><a href="kapcsolat.html">Kapcsolat</a></li>
@@ -17,6 +18,18 @@
             </ul>
         </nav>
     </header>
+    <div id="loader">
+        <img src="images/big-logo.png" alt="">
+        <div id="loaded-files-container" class="file-item">
+            <span id="loadedFiles"></span>
+            <span>/</span>
+            <span id="allFiles"></span> 
+        </div>
+        <div id="progress-container">
+            <div id="progress-bubble">0%</div>
+            <div id="progress-bar"></div>
+        </div>
+    </div>
     <main>
         <div class="fooldal">
             <h1>Vadász autókereskedés</h1>
@@ -35,7 +48,8 @@
                 </ul>
             </div>
         </div>
-        
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
