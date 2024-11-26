@@ -222,19 +222,37 @@ td h3{
     margin-top: 100px;
     display: none;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    color: #fff;
+    color: #000;
     border-radius: 5px;
     font-size: 18px;
 }
 .success {
-    background-color: green;
+    background-color: #ddffdd;
+    border: 1px solid #04AA6D;
+    border-left: 6px solid #04AA6D;
+    animation: fadeIn 3.1s ease-in-out;
 }
 .error {
-    background-color: red;
+    background-color: #ffdddd;
+    border: 1px solid #f44336;
+    border-left: 6px solid #f44336;
+    animation: fadeIn 3.1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .rolunk h1 {
@@ -367,7 +385,7 @@ main {
     background-color: #4CAF50;
     border-radius: 10px;
     animation: progress 10s linear;
-}
+}   
 
 
 #myDiv {

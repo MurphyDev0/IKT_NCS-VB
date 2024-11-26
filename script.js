@@ -51,9 +51,17 @@ function kuldes() {
     popup.classList.remove("error");
 
     if (nev.length !== 0 && email.length !== 0 && uzenet.length !== 0) {
-        popup.innerHTML = `&check; Sikeres küldés!`
-        popup.classList.add('success')
+        if(email.includes('@') && email.includes('.')){
+            console.log("Sikeres küldés!")
+            popup.innerHTML = `&check; Sikeres küldés!`
+            popup.classList.add('success')
+        } else{
+            console.log("Hiba: Hibás email cím!")
+            popup.innerHTML = `&times; Hiba! Hibás email cím!`
+            popup.classList.add('error')
+        }
     } else {
+        console.log("Hiba: Minden mezőt ki kell tölteni!")
         popup.innerHTML = `&times; Hiba! Minden mezőt ki kell tölteni!`
         popup.classList.add('error')
     }
