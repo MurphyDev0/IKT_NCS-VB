@@ -85,7 +85,9 @@ function loading(){
         document.getElementById("loadedFiles").innerHTML = loadedFiles;
     }, filesSec)
 
+    console.log(window.location.href)
+
     setTimeout(() => {
-        window.location = "https://murphydev0.github.io/IKT_NCS-VB/fooldal.html"
+        window.location.href = "https://murphydev0.github.io/IKT_NCS-VB/fooldal.html"
     }, 10000)
 }
