@@ -86,6 +86,6 @@ function loading(){
     }, filesSec)
 
     setTimeout(() => {
-        loader.style.display = 'none'
+        window.location.href = "fooldal.html"
     }, 10000)
 }
