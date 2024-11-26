@@ -39,7 +39,6 @@ function changeSlide(direction) {
 
 function updateSlide() {
     document.getElementById('currentSlide').src = currentCarImages[currentImageIndex]
-    console.log(currentCarImages[currentImageIndex])
 }
 
 function kuldes() {
@@ -84,8 +83,6 @@ function loading(){
         }
         document.getElementById("loadedFiles").innerHTML = loadedFiles;
     }, filesSec)
-
-    console.log(window.location.href)
 
     setTimeout(() => {
         window.location.href = "https://murphydev0.github.io/IKT_NCS-VB/fooldal.html"
