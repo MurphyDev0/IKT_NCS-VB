@@ -10,7 +10,6 @@ body{
     height: 100%;
 }
 
-
 header{
     color: black;
     background-color: #dce9e2;
@@ -128,9 +127,6 @@ td h3{
     display: block;
     border-radius: 6px;
 }
-
-
-
 
 .close{
     color: rgb(221, 14, 14);

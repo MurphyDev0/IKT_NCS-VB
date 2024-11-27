@@ -41,36 +41,71 @@ function updateSlide() {
     document.getElementById('currentSlide').src = currentCarImages[currentImageIndex]
 }
 
+const nev = document.getElementById('nev').value.trim()
+const email = document.getElementById('email').value.trim()
+const uzenet = document.getElementById('uzenet').value.trim()
+const popup = document.getElementById('popup')
+
+function validateEmail(email) {
+    if (email.length == 0) {
+        return false;
+    }
+
+    email = email.trim();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+    if (!emailRegex.test(email)) {
+        return false;
+    }
+
+    const [localPart, domain] = email.split('@');
+
+    if (localPart.length > 64 || domain.length > 255) {
+        return false;
+    }
+
+    const forbiddenChars = /[()[\]\\,;:/<>]/;
+    if (forbiddenChars.test(email)) {
+        return false;
+    }
+
+    if (/\.{2,}/.test(email)) {
+        return false;
+    }
+
+    return true;
+}
+
 function kuldes() {
-    
-    const nev = document.getElementById('nev').value.trim()
-    const email = document.getElementById('email').value.trim()
-    const uzenet = document.getElementById('uzenet').value.trim()
-    const popup = document.getElementById('popup')
+    const nev = document.getElementById('nev').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const uzenet = document.getElementById('uzenet').value.trim();
+    const popup = document.getElementById('popup');
 
     popup.classList.remove("error");
 
     if (nev.length !== 0 && email.length !== 0 && uzenet.length !== 0) {
-        if(email.includes('@') && email.includes('.')){
-            console.log("Sikeres küldés!")
-            popup.innerHTML = `&check; Sikeres küldés!`
-            popup.classList.add('success')
-        } else{
-            console.log("Hiba: Hibás email cím!")
-            popup.innerHTML = `&times; Hiba! Hibás email cím!`
-            popup.classList.add('error')
+        if (validateEmail(email)) {
+            console.log("Sikeres küldés!");
+            popup.innerHTML = `&check; Sikeres küldés!`;
+            popup.classList.add('success');
+        } else {
+            console.log("Hiba: Hibás email cím!");
+            popup.innerHTML = `&times; Hiba! Hibás email cím!`;
+            popup.classList.add('error');
         }
     } else {
-        console.log("Hiba: Minden mezőt ki kell tölteni!")
-        popup.innerHTML = `&times; Hiba! Minden mezőt ki kell tölteni!`
-        popup.classList.add('error')
+        console.log("Hiba: Minden mezőt ki kell tölteni!");
+        popup.innerHTML = `&times; Hiba! Minden mezőt ki kell tölteni!`;
+        popup.classList.add('error');
     }
 
-    popup.style.display = 'block'
+    popup.style.display = 'block';
 
     setTimeout(() => {
-        popup.style.display = 'none'
-    }, 3000)
+        popup.style.display = 'none';
+    }, 3000);
 }
 
 function loading(){
