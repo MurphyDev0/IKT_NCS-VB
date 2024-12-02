@@ -65,7 +65,44 @@ function validateEmail(email) {
         return false;
     }
 
-    const forbiddenChars = /[()[\]\\,;:/<>]/;
+    if (localPart.length < 6){
+        return false;
+    }
+
+    const localPartRegex = /^[a-zA-Z]+$/;
+    if (localPart.length > 6 && !localPartRegex.test(localPart[0])){
+        return false;
+    }
+
+    const validExtensions = [
+        '.com', '.org', '.net', '.edu', '.gov', '.mil', '.int', 
+        '.info', '.biz', '.name', '.pro', '.mobi', '.aero', '.asia',
+        '.io', '.dev', '.app', '.tech', '.online', 
+        '.blog', '.club', '.xyz', '.global', 
+        '.hu', '.us', '.uk', '.de', '.fr', '.eu', '.ro'
+    ];
+
+    let extensionCount = 0;
+
+    for (let i = 0; i <= validExtensions.length; i++) {
+        if (domain.includes(validExtensions[i])) {
+            extensionCount++;
+            console.log(validExtensions[i]);
+        }
+    }       
+
+    console.log(extensionCount);
+    if (extensionCount == 0 || extensionCount > 1) {
+        return false;
+    }
+
+    const mainDomainRegex = /^(gmail\.com|outlook\.com|yahoo\.com|hotmail\.com|protonmail\.com|icloud\.com)$/i;
+
+    if(!mainDomainRegex.test(domain)){
+        return false;
+    }
+
+    const forbiddenChars = /[()[\]\\,;:&#|$/<>]/;
     if (forbiddenChars.test(email)) {
         return false;
     }
