@@ -53,7 +53,7 @@ function validateEmail(email) {
 
     email = email.trim();
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@_]{2,}$/;
 
     if (!emailRegex.test(email)) {
         return false;
@@ -71,6 +71,10 @@ function validateEmail(email) {
 
     const localPartRegex = /^[a-zA-Z]+$/;
     if (localPart.length > 6 && !localPartRegex.test(localPart[0])){
+        return false;
+    }
+    
+    if (localPart[0] == "." || localPart[localPart.length - 1] == "."){
         return false;
     }
 
